@@ -1,4 +1,6 @@
 class PhotosController < ApplicationController
+  before_filter :load_user
+  
   # GET /photos
   # GET /photos.xml
   def index
@@ -41,7 +43,8 @@ class PhotosController < ApplicationController
   # POST /photos.xml
   def create
     @photo = Photo.new(params[:photo])
-
+    @photo.user = @user
+    
     respond_to do |format|
       if @photo.save
         flash[:notice] = 'Photo was successfully created.'
@@ -81,5 +84,10 @@ class PhotosController < ApplicationController
       format.html { redirect_to(photos_url) }
       format.xml  { head :ok }
     end
+  end
+  
+private
+  def load_user
+    @user = User.find(params[:user_id]) || current_user
   end
 end

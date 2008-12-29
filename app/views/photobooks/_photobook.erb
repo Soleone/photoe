@@ -1,0 +1,4 @@
+<%=h photobook.title %>
+<% photobook.photos.each do |photo| %>
+  <%= render :partial => 'photos/photo', :object => photo %>
+<% end %>
