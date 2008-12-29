@@ -1,0 +1,23 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  show: "Show"
+  create: "Create"
+  edit: "Edit"
+  update: "Update"
+  back: "Back"
+  
+  user:
+    created: "Successfully created a new User"
+    updated: "Successfully updated the User"
+  login:
+    successful: "Login successful!"
+    required: "You must be logged in to access this page"
+  logout:
+    successful: "Logout successful!"
+    required: "You must be logged out to access this page"
+  photo:
+    upload: "Upload a new photo"
+    edit: "Editing photo"
+    list: "Listing all photos"

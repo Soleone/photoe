@@ -1,0 +1,9 @@
+<h1><%= t 'photo.upload' %></h1>
+
+<% form_for @photo, :html => {:multipart => true} do |f| %>
+  <%= render :partial => 'form', :object => f %>
+
+  <p><%= f.submit t('create') %></p>
+<% end %>
+
+<%= link_to t('back'), photos_path %>
