@@ -1,0 +1,9 @@
+<h1><%= t 'photobook.create' %></h1>
+
+<% form_for [@user, @photobook], :html => {:multipart => true} do |f| %>
+  <%= render :partial => 'form', :object => f %>
+
+  <p><%= f.submit t('create') %></p>
+<% end %>
+
+<%= link_to t('back'), user_photobooks_path(@user) %>

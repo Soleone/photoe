@@ -1,0 +1,29 @@
+Show all photos
+  /photos
+
+Show a certain photo
+  /photos/1
+  /photos/1-funny-lolcat
+  /photos/funny-lolcat
+
+Show all photos for a user
+  /users/1/photos
+  /users/soleone/photos
+
+Show a certain photo for a user
+  /users/1/photos/1
+  /users/soleone/photos/funny-lolcat
+
+
+Show all photobooks
+  /photobooks
+
+Show all photobooks for a user
+  /users/1/photobooks
+  /users/soleone/photobooks
+
+Show a certain photobook for a user
+  /users/1/photobooks/1
+  /users/soleone/photobooks/my-wedding
+
+

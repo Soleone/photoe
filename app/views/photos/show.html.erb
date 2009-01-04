@@ -1,4 +1,10 @@
-<%= render :partial => @photo %>
+<h2><%=h @photo.title %></h2>
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
+<%= image_tag @photo.image.url %>
+
+<p>
+  <%=h @photo.description %>
+</p>
+
+<%= link_to 'Edit', edit_user_photo_path(@user, @photo) %> |
+<%= link_to 'Back', user_photos_path(@user) %>

@@ -65,7 +65,7 @@ class PhotosController < ApplicationController
     respond_to do |format|
       if @photo.update_attributes(params[:photo])
         flash[:notice] = 'Photo was successfully updated.'
-        format.html { redirect_to(@photo) }
+        format.html { redirect_to [@user, @photo] }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -88,6 +88,6 @@ class PhotosController < ApplicationController
   
 private
   def load_user
-    @user = User.find(params[:user_id]) || current_user
+    @user = params[:user_id] ? User.find(params[:user_id]) : current_user
   end
 end

@@ -1,7 +1,8 @@
-<h2><%=h @photo.title %></h2>
+<div class="photo float">
+  <%= link_to image_tag(photo.image.url(:thumb)), photo, :title => "Click to enlarge" %>
+  <br/>
 
-<%= image_tag @photo.image.url %>
-
-<p>
-  <%=h @photo.description %>
-</p>
+  <p>
+    <%=h photo.title %>
+  </p>
+</div>

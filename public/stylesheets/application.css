@@ -1,0 +1,28 @@
+/* Photos */
+.photo img {
+	border: 1px solid #666;
+	padding: 2px;
+	width: 100px;
+	height: 100px;
+}
+
+.photo img:hover {
+	border: 1px solid #f33;
+}
+
+.photo a:hover {
+	background-color: transparent;
+}
+
+.photo p {
+	text-align: center;
+	font-size: 10px;
+}
+
+div.float {
+	float: left;
+}
+
+.spacer {
+	clear: both;
+}

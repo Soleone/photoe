@@ -1,8 +1,11 @@
 <h1><%= t 'photo.list' %></h1>
 
+<div class="container">
 <% for photo in @photos %>
-  <%= link_to image_tag(photo.image.url(:thumb)), photo %>
+  <%= render :partial => photo %>
 <% end %>
+<div class="spacer" />
+</div>
 
 <br/>
-<%= link_to t('photo.upload'), new_photo_path %>
+<%= link_to t('photo.upload'), new_user_photo_path(@user) %>
