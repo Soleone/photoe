@@ -1,6 +1,6 @@
-config/datebase.yml
-tmp
+config/database.yml
 public/avatars
 public/images
 .DS_Store
 log/*
+tmp/*
