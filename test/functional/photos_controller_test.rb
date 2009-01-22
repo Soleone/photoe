@@ -1,7 +1,9 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
 
 class PhotosControllerTest < ActionController::TestCase
   test "should get index" do
+   # PhotosController.expects(:load_user)
+    
     get :index
     assert_response :success
     assert_not_nil assigns(:photos)
