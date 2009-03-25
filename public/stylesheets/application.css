@@ -26,3 +26,24 @@ div.float {
 .spacer {
 	clear: both;
 }
+
+ul.actions {
+	list-style: none;
+	padding: 0;
+}
+
+.actions li {
+	display: inline;
+}
+
+.actions li:after {
+	content: " | ";
+}
+
+.actions li:last-child:after {
+	content: "";
+}
+
+.actions a {
+	color: #c00;
+}

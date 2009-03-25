@@ -1,3 +1,10 @@
-<%= render :partial => @user %> 
- 
-<%= link_to 'Edit', edit_account_path %>
+<ul class="actions">
+  <li><%= link_to 'Edit account information', edit_account_path %></li>
+</ul>
+
+<%= render :partial => @user %>  
+
+<ul class="actions">
+  <li><%= link_to "Show your photos", user_photos_path(@user) %></li>
+  <li><%= link_to "Show all photos", :controller => "photos" %></li>
+</div>

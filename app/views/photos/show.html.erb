@@ -6,5 +6,7 @@
   <%=h @photo.description %>
 </p>
 
-<%= link_to 'Edit', edit_user_photo_path(@user, @photo) %> |
-<%= link_to 'Back', user_photos_path(@user) %>
+<ul class="actions">
+  <li><%= link_to 'Edit', [:edit, @photo] %></li>
+  <li><%= link_to 'Back', user_photos_path(@user) %></li>
+</ul>

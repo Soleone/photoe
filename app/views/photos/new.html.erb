@@ -6,4 +6,6 @@
   <p><%= f.submit t('create') %></p>
 <% end %>
 
-<%= link_to t('back'), user_photos_path(@user) %>
+<ul class="actions">
+  <li><%= link_to t('back'), user_photos_path(@user) %></li>
+</ul>
